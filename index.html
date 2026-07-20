@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Se Has — Frontend / Web Developer</title>
+<meta name="description" content="Portfolio of Se Has, frontend developer specializing in Angular, real-time systems and enterprise dashboards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Grid backdrop -->
+<div class="chart-grid" aria-hidden="true"></div>
+
+<!-- Status bar -->
+<div class="statusbar">
+  <div class="statusbar__inner">
+    <span class="statusbar__item"><span class="dot dot--live"></span>OPEN TO WORK</span>
+    <span class="statusbar__item statusbar__item--sep">MODULES: 8/8</span>
+    <span class="statusbar__item statusbar__item--sep" id="local-time">--:--:--</span>
+    <span class="statusbar__item statusbar__item--sep statusbar__item--right">PHNOM PENH, KH · 12.45°N 107.18°E</span>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="site-header">
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav__mark">SH<span class="nav__mark-dot">.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#experience" data-nav>Experiences</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#education" data-nav>Education</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">FRONTEND / WEB DEVELOPER</p>
+      <h1 class="hero__title">Se Has</h1>
+      <p class="hero__role">Building the instruments that keep enterprise systems readable, fast, and honest.</p>
+      <p class="hero__lede">Five years charting frontend architecture for insurance platforms, vessel-tracking systems and HR tooling mostly in Angular, mostly at scale, always with an eye on what happens when the data updates in real time.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View systems built</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero__panel">
+      <div class="id-card">
+        <div class="id-card__frame">
+          <img src="assets/profile.png" alt="Portrait of Se Has" class="id-card__photo">
+        </div>
+        <dl class="id-card__meta">
+          <div><dt>Position</dt><dd>Web Developer</dd></div>
+          <div><dt>Base</dt><dd>Phnom Penh, KH</dd></div>
+          <div><dt>Since</dt><dd>Feb 2021 — Present</dd></div>
+          <div><dt>Stack</dt><dd>Angular · TypeScript</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <h2>Summary</h2>
+    </div>
+    <div class="panel panel--corners">
+      <p class="about__text">I'm a results-driven frontend developer with five years of experience building scalable, high-performance enterprise web applications using Angular and TypeScript. I care about system optimization, clean architecture, and shipping solutions that hold up under real production load not just in the demo.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section__head">
+      <h2>Experience</h2>
+    </div>
+
+    <div class="route">
+      <div class="route__line" aria-hidden="true"></div>
+
+      <article class="waypoint">
+        <div class="waypoint__marker"><span class="waypoint__dot"></span></div>
+        <div class="waypoint__body panel">
+          <div class="waypoint__top">
+            <h3>Web Frontend Developer</h3>
+            <span class="waypoint__meta">Ecoinsoft Solution · Feb 2021 — Present</span>
+          </div>
+          <ul class="waypoint__list">
+            <li>Improved application load time by optimizing Angular change detection, implementing lazy-loaded modules, and reducing unnecessary API calls.</li>
+            <li>Built and maintained complex enterprise dashboards with real-time data visualization and role-based access control.</li>
+            <li>Refactored legacy frontend code into reusable Angular components and shared services.</li>
+            <li>Integrated with backend APIs and handled all response states.</li>
+            <li>Managed multiple enterprise modules including Policy, Endorsement, Quotation, Renewal, Risk Management, Claims, Finance, and Underwriting.</li>
+            <li>Implemented WebSocket and Socket.IO for low-latency, real-time data exchange.</li>
+            <li>Reviewed junior developers' code, managed branch merges, and deployed applications to test, stage, and production environments.</li>
+            <li>Fixed bugs and refactored code to improve performance, readability, and maintainability.</li>
+            <li>Provided user support and guidance on system usage.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <h2>Projects</h2>
+    </div>
+
+    <div class="grid grid--projects">
+      <article class="card panel panel--corners">
+        <span class="card__tag">Insurance · Enterprise</span>
+        <h3>Infinity Insurance System</h3>
+        <p>Enterprise-level insurance management system handling complex workflows including policy management, endorsements, quotations, claims, and underwriting modules.</p>
+      </article>
+
+      <article class="card panel panel--corners">
+        <span class="card__tag">Real-time · Geolocation</span>
+        <h3>Vessel Monitoring System</h3>
+        <p>Satellite-based monitoring system for tracking fishing vessel positions in real time across web, tablet, and mobile platforms.</p>
+      </article>
+
+      <article class="card panel panel--corners">
+        <span class="card__tag">HR · Operations</span>
+        <h3>HR Management System</h3>
+        <p>Centralized HR system for managing employee information, payroll, attendance, performance reviews, and organizational hierarchy.</p>
+      </article>
+
+      <article class="card panel panel--corners">
+        <span class="card__tag">API Tooling</span>
+        <h3>Linkup</h3>
+        <p>API platform for building, testing, and managing RESTful APIs with comprehensive documentation and integration capabilities.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section__head">
+      <h2>Skills &amp; Knowledge</h2>
+    </div>
+
+    <div class="instruments">
+      <div class="instrument panel">
+        <h3 class="instrument__title">Frontend</h3>
+        <div class="chips">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span><span class="chip">Angular</span><span class="chip">React</span>
+          <span class="chip">Vue</span><span class="chip">Bootstrap</span><span class="chip">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="instrument panel">
+        <h3 class="instrument__title">Backend (foundation)</h3>
+        <div class="chips">
+          <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">NestJS</span><span class="chip">PHP-Laravel</span>
+        </div>
+      </div>
+      <div class="instrument panel">
+        <h3 class="instrument__title">Database (foundation)</h3>
+        <div class="chips">
+          <span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span>
+        </div>
+      </div>
+      <div class="instrument panel">
+        <h3 class="instrument__title">Real-time</h3>
+        <div class="chips">
+          <span class="chip">WebSocket</span><span class="chip">Socket.IO</span>
+        </div>
+      </div>
+      <div class="instrument panel">
+        <h3 class="instrument__title">Mapping &amp; Location</h3>
+        <div class="chips">
+          <span class="chip">Angular Google Maps</span><span class="chip">Google Maps JS API</span>
+        </div>
+      </div>
+      <div class="instrument panel">
+        <h3 class="instrument__title">Version Control</h3>
+        <div class="chips">
+          <span class="chip">Git</span><span class="chip">GitLab</span><span class="chip">GitHub</span>
+        </div>
+      </div>
+      <div class="instrument panel">
+        <h3 class="instrument__title">UI/UX Tools</h3>
+        <div class="chips">
+          <span class="chip">Photoshop</span><span class="chip">Figma</span>
+        </div>
+      </div>
+      <div class="instrument panel">
+        <h3 class="instrument__title">Collaboration</h3>
+        <p class="instrument__note">Experienced working closely with backend developers and UI/UX designers to deliver reliable, high-quality applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section__head">
+      <h2>Education</h2>
+    </div>
+    <div class="grid grid--two">
+      <div class="panel panel--corners">
+        <span class="card__tag">2017 — 2021</span>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>Svay Rieng University</p>
+        <ul class="waypoint__list">
+          <li>Programming ( C/C++, Java, C#)</li>
+          <li>Data structures and algorithms</li>
+          <li>Computer architecture and operating systems</li>
+          <li>Databases and software engineering</li>
+          <li>Networking and computer security basics</li>
+          <li>Discrete mathematics and statistics</li>
+          <li>Web/software development projects</li>
+        </ul>
+      </div>
+      <div class="panel panel--corners">
+        <span class="card__tag">2017 — 2019</span>
+          <h3>Associate Degree in English</h3>
+        <p>Svay Rieng University</p>
+        <ul class="waypoint__list">
+          <li>English grammar, writing, and composition</li>
+          <li>Listening and speaking/conversation skills</li>
+          <li>Basic translation or linguistics</li>
+          <li>Communication Skill</li>
+          <li>Critical Thinking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid--two info-grid">
+      <div class="panel">
+        <h3 class="instrument__title">Languages</h3>
+        <ul class="langs">
+          <li><span>Khmer</span><div class="bar"><div class="bar__fill" style="--level:100%"></div></div><span class="langs__level">Native</span></li>
+          <li><span>English</span><div class="bar"><div class="bar__fill" style="--level:65%"></div></div><span class="langs__level">Intermediate</span></li>
+          <li><span>Chinese</span><div class="bar"><div class="bar__fill" style="--level:30%"></div></div><span class="langs__level">Beginner</span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3 class="instrument__title">Interests &amp; Adaptability</h3>
+        <p class="instrument__note">Continuous learning of new technologies and professional development to deliver greater value in the field. Quick to adapt to new tools, stacks, and evolving job requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="section" id="references">
+    <div class="section__head">
+      <h2>References</h2>
+    </div>
+    <div class="grid grid--two">
+      <div class="panel">
+        <h3>Yem Nayhouth</h3>
+        <p class="ref__role">Core Banking API &amp; Development Officer, KB PRASAC Bank</p>
+        <p class="ref__contact">010 376 676 · yem.nayhout@gmail.com</p>
+      </div>
+      <div class="panel">
+        <h3>Rin Chanthorn</h3>
+        <p class="ref__role">Business Intelligence Developer, Wing Bank</p>
+        <p class="ref__contact">096 60 06 277 · chanthanrin@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="section__head">
+      <h2>Let's work together</h2>
+    </div>
+    <div class="panel panel--corners contact-panel">
+      <p>Open to frontend and full-stack opportunities. The fastest way to reach me:</p>
+      <div class="contact-grid">
+        <button class="contact-item" id="copyEmail" type="button">
+          <span class="contact-item__label">Email</span>
+          <span class="contact-item__value">hasnimol0319@gmail.com</span>
+          <span class="contact-item__hint" id="copyHint">Click to copy</span>
+        </button>
+        <a class="contact-item" href="tel:066817892">
+          <span class="contact-item__label">Phone</span>
+          <span class="contact-item__value">066 817 892</span>
+        </a>
+        <a class="contact-item" href="https://github.com/hasse0303?tab=repositories" target="_blank" rel="noopener">
+          <span class="contact-item__label">Source code</span>
+          <span class="contact-item__value">github.com/hasse0303</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Se Has — Web Developer · Phnom Penh, Cambodia</p>
+  <p class="footer__coord">12.45°N 107.18°E</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
